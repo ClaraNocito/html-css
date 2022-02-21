@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+           /* 
+            Medidas Absolutas   
+            cm, mm, in (polegada), px (recomendado), pt, pc 
+        
+             Medidas Relativas
+             em (recomendado), ex, rem, vw, vh, %
+             geralmente 1em = 16px
+            */
+            font-size: 16px ;
+            font-weight: normal; /* pode ser medida em numeros de 100-900 */
+            /* weight (peso) width (largura) height (altura) */
+            /* pesos literais
+            lighter normal bold bolder*/
+            font-style: normal;
+            
+
+        }    
+        h1 {
+            /*
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic; 
+            (Esse conjunto de declarações vai ser condensado em uma só formula e isso se chama shorthand font)
+            
+            font-style -> font-wight -> font-size -> font-family 
+            Veja a seguir:*/
+            font: italic bolder 3em Arial, sans-serif;
+        } 
+        h2 {
+            font: bold 2em Times;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore itaque et porro minima, ea voluptatem fuga rem quas maiores eligendi amet odio illum mollitia voluptates aspernatur, dicta architecto obcaecati asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit provident ratione nemo eligendi eveniet dolorum. Facilis vero accusantium consectetur placeat laboriosam ex, inventore a asperiores aut architecto soluta maiores obcaecati!Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus natus nobis tempora. Deleniti aut dolorum est dolore, quisquam eveniet aliquid ipsa corporis, non modi autem sunt laborum sint. Qui, iusto?
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat maxime, dolor magnam laudantium dignissimos error non ipsam mollitia nam, asperiores sunt tenetur architecto expedita voluptatum perferendis praesentium modi nostrum in?</p>
+    
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea laudantium enim odit porro quisquam distinctio eligendi laborum minima soluta voluptate maxime, quasi consequatur iste impedit, sapiente laboriosam rerum beatae quaerat?</p>
+</body>
+</html>
