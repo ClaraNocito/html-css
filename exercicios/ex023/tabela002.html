@@ -10,9 +10,18 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        caption {
+            padding: 15px;
+            background-color: lightgrey;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*para colocar o cabeçalho fixo coloca-se a posição relativa*/
         }
 
         td, th {
@@ -23,6 +32,17 @@
         td.num {
             text-align: right;
         }
+
+        thead > tr > th {        /*configurações para fixar o cabeçalho */
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) {         /*efeito zebrado de 2 em 2 linhas*/
+            background-color: lightgray; /*no lugar de 2n pode colocar even (par)*/
+        }                                   /*no lugar de 2n-1 pode colocar odd (impar)*/
+        
 
         thead, tfoot {
             background-color: gray;
@@ -35,19 +55,23 @@
     <!--
         HIERARQUIA DE TABELAS GRANDES
         TABLE = tabela
+            CAPTION (título / legenda da tabela)
             THEAD
-                TR, TD, TH
+                TR, TD, TH (th é o titulo da coluna, td é o dado da coluna e tr é a linha)
             TBODY
                 TR, TD, TH
             TFOOT         
                 TR, TD, TH   
+
+                Scope = classificação do titulo de coluna ou linha
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr> 
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
 
@@ -166,7 +190,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>213 649 132</strong></td>
             </tr>
         </tfoot>
