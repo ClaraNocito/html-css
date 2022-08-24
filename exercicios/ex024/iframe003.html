@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 98vw;
+            border: 2px solid black;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, earum. Totam, perferendis dolorum vitae nam voluptatem repellendus minima nemo excepturi a atque nobis praesentium odit, esse et libero magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At officia maxime corrupti atque nisi cupiditate voluptatibus possimus. Doloribus deserunt modi sint ipsa maxime, consectetur iure molestias voluptates officiis, tempore quae?
+    </p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li> <!--para abrir a pagina dentro do frame-->
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio nemo totam, quod autem dolor debitis error harum sequi mollitia molestias quis atque ullam dignissimos eius ad alias unde? Architecto, atque?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil voluptatibus, quibusdam quo consectetur dolorum ex quasi omnis placeat! Enim dicta, nulla inventore velit nam corrupti voluptates aliquid ut illo sunt.
+    </p>
+
+    <iframe srcdoc="<h1> Esolha uma opção acima</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est sint ipsum ipsam soluta voluptates amet, dignissimos eos vel debitis id inventore nulla tempora assumenda ducimus cum vitae earum dolorum magni.</p>" id="tela" name="frame">  <!--srcdoc para incluir elementos html no iframe-->
+        <p> Infelizmente seu navegador não é compativel com isso!</p>     
+    </iframe >
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vitae nemo itaque, labore est, consequatur veritatis reprehenderit modi repudiandae provident cum, eius atque sed iste neque eaque non blanditiis voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo minima, alias quisquam amet, aperiam repudiandae fugiat quas ipsam maxime saepe facilis quaerat blanditiis possimus ab error corrupti accusantium optio vel!
+    </p>
+</body>
+</html>
